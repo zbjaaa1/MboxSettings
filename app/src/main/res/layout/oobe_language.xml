@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language_tip"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" >
+
+            <GridView
+                android:id="@+id/lang_grd"
+                android:layout_marginLeft="143dp"
+                android:layout_marginRight="143dp"
+                android:layout_width="wrap_content"
+                android:layout_height="298dp"
+                android:listSelector="@drawable/transparent"
+                android:verticalSpacing="10dp" 
+                android:numColumns="6">
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="top|center_horizontal" >
+
+        <Button
+            android:id="@+id/button_language_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bottom"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/button_previous"
+            android:textColor="@android:color/white"
+            android:textSize="22dp"
+            android:nextFocusUp="@+id/lang_grd" />
+
+        <Button
+            android:id="@+id/button_language_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bottom"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/button_next"
+            android:textColor="@android:color/white"
+            android:textSize="22dp"
+            android:nextFocusUp="@+id/lang_grd"  />
+    </LinearLayout>
+
+</LinearLayout>

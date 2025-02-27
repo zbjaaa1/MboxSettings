@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/oobe_select_google"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_uncheck"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="@string/google_voice_search"
+            android:textColor="@android:color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/oobe_select_xunfei"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_uncheck"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="@string/xunfei_voice_search"
+            android:textColor="@android:color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom|center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/button_voice_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bottom"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/button_previous"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/button_voice_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bottom"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/oobe_finish"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+    </LinearLayout>
+    
+
+</LinearLayout>
